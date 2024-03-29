@@ -1,0 +1,134 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 30px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.header > img {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 50px;
+}
+.main-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main-info > h1 {
+    font-size: 3.3rem;
+}
+
+.main-info > p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: calc(33.33% - 30px);
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gray {
+    color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+    
+    .main-info > p {
+        width: 100%;
+    }
+    .main-img > img {
+        width: 330px;
+    }
+    .card {
+        width: calc(50% - 20px);
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    .card:last-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+
+    .main-info > h1 {
+        font-size: 2.5rem;
+    }
+    .main-img > img {
+        width: 330px;
+    }
+    .main-info > p {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
